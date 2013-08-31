@@ -9,7 +9,7 @@ setterm -term cmdforlinux
 # sets title to cmdforlinux
 # (setterm not working on ubuntu 13.04 apparently :P)
 clear
-echo CMD for Linux && echo CMD version 0.0.2
+echo CMD for Linux && echo Developed by Gabriel Simmer && echo CMD version 0.0.1
 for (( ; ; ))
 # Looping
 do
@@ -30,16 +30,8 @@ else
 if [ "$input" = "echo" ]; then
 echo $opt
 else
-if [ "$input" = "dir" ]; then
-ls -a -l
-else
-if [ "$input" = "cd" ]; then
-cd $opt
-else
 echo Sorry, not implemented.
 # commands 'n' stuff go here
-fi
-fi
 fi
 fi
 fi
